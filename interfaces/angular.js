@@ -1,13 +1,13 @@
 /* jshint ignore: start */
-type AngularJSIterable = Object | Array;
+type AngularJSIterable = Object | Array<any>;
 type AngularJSStringNumber = string | number;
 type AngularJSDependencyDirectiveFunction = (...args: any) => Object;
 type AngularJSDependencyControllerFunction = (...args: any) => void;
 type AngularJSDependencyFactoryFunction = (...args: any) => void;
 
 declare class AngularJSCallbacks {
-  css(index: number, value: string): AngularJSStringNumber;
-  iterator(value: any, key: string | number): void;
+  static css(index: number, value: string): AngularJSStringNumber;
+  static iterator(value: any, key: string | number): void;
 }
 
 declare class AngularJSJQueryLite {
